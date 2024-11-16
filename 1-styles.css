@@ -1,20 +1,33 @@
 *, *::before, *::after {
-  box-sizing: border-box;
-  margin : 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-    height: 100vh;
-    font-weight:bold;
-    font-size: 1.5rem;
+h2 {
+    margin: 10px 5px;
+    position: relative;
 }
 
-ul {
-    display: grid;
-    place-items:center;
-    list-style: none;
-    height: 100vh;
+a {
+    position : relative;
+    text-decoration: none;
+    color: #8a153a;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    text-decoration: none;
+    background-color: #8a153a;
+    height: 3px;
+    width: 0;
+    transition: .5s ease-out;
+    transform-origin: left;
+}
+
+a:hover::before {
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
 }
