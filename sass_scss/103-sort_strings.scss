@@ -1,0 +1,5 @@
+//  sorts variable $list_to_sort and print the sorted list
+@import '103-sort_list.scss';
+@each $name in $list_to_sort {
+    @debug #{$name};
+}
