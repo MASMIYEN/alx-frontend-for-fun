@@ -1,0 +1,12 @@
+// sass color variable declaring
+$text-color: #3D3D3D;
+
+// Applying the color variable on body and p tags
+
+body {
+    color: $text-color;
+}
+
+p {
+    color: $text-color;
+}
