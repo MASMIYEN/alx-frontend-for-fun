@@ -1,0 +1,19 @@
+// Define color and background variables
+
+$text-color: #3D3D3D;
+$background-color: #6d6d6d;
+
+// apply the color to body and p tags
+
+body {
+    color: $text-color;
+    background-color: $background-color;
+}
+
+p { 
+    color: $text-color;
+}
+
+h2 {
+    background-color: $background-color;
+}
